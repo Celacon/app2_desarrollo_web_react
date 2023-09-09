@@ -10,7 +10,8 @@ export const FormContainer = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
   margin-bottom: 10px;
 `;
 
@@ -34,7 +35,8 @@ export const StyledButton = styled.button`
   color: #fff;
   border: none;
   border-radius: 3px;
-  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
   cursor: pointer;
 
   &:hover {
