@@ -4,6 +4,8 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-top: 20px;
+    padding: 2rem;
+    text-align: center;
   }
   
   .taskItem {
@@ -13,4 +15,8 @@
     background-color: #fff;
     border-radius: 3px;
     list-style-type: none;
+  }
+
+  .taskList h2 {
+    text-align: center;
   }

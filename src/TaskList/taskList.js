@@ -3,6 +3,8 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { clearLocalStorage } from '../actions'; 
 import { Link } from 'react-router-dom';
+import { Button, ButtonI} from '../UI/Button/Button';
+import { Iqcard } from '../UI/Card/Card';
 
 function TaskList() {
   //const { taskList } = useTaskContext(); // Obtén el arreglo taskList del contexto
@@ -14,11 +16,11 @@ function TaskList() {
   };
 
   return (
-    <div>
+    <Iqcard>
       <h2>Lista de Tareas</h2>
-      <button onClick={handleClearLocalStorage}>Limpiar Local Storage</button>
+      <Button onClick={handleClearLocalStorage}>Limpiar Local Storage</Button>
       <Link to="/">
-        <button>Ingresar</button>
+        <ButtonI>Ingresar</ButtonI>
       </Link>
       <ul>
         {taskList.map((task, index) => (
@@ -30,7 +32,7 @@ function TaskList() {
           </li>
         ))}
       </ul>
-    </div>
+    </Iqcard>
   );
 }
 
